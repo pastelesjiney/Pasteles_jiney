@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffdf9;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  color: #f4a300;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: #f4a300;
+}
+
+/* HERO */
+.hero-contacto {
+  background: linear-gradient(135deg, #f4a300, #ffce60);
+  color: white;
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero-contacto h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+/* FORMULARIO */
+.formulario-contacto {
+  padding: 80px 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+form {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+form input, form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+form button {
+  background: #f4a300;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #ffbf3f;
+}
+
+/* INFO */
+.info {
+  flex: 1 1 300px;
+  background: #fff4d1;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.info h2 {
+  color: #f4a300;
+  margin-bottom: 15px;
+}
+
+.info p {
+  margin-bottom: 8px;
+}
+
+.info a {
+  color: #f4a300;
+  text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 25px;
+  font-size: 0.9em;
+}
