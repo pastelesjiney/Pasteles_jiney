@@ -179,3 +179,54 @@ footer {
   background-color: #E94E1B;
   transform: scale(1.05);
 }
+
+
+/* Redes sociales en el header */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.social-icons a img {
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: #FFF8E7;
+  padding: 40px 0;
+  margin-top: 50px;
+  color: #333;
+  border-top: 2px solid #f4a300;
+}
+
+.footer p {
+  margin: 8px 0;
+  font-weight: 600;
+}
+
+.social-footer a img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.social-footer a img:hover {
+  transform: scale(1.1);
+}
+
+.copy {
+  font-size: 0.9em;
+  color: #777;
+}
