@@ -1,232 +1,133 @@
+/* =========================
+   PASTELES JINEY - ESTILOS GLOBALES
+   Sabores caseros hechos con tradición y amor
+========================= */
+
+/* VARIABLES */
+:root {
+  --color-principal: #3A2E2A;
+  --color-secundario: #C89B3C;
+  --color-fondo: #F6F1E8;
+  --color-texto: #2B2B2B;
+  --color-blanco: #FFFFFF;
+  --color-gris: #EAEAEA;
+}
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BODY */
 body {
-  font-family: 'Poppins', sans-serif;
-  color: #333;
-  background-color: #fff;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+/* TIPOGRAFÍAS */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
 }
 
 /* NAVBAR */
-.navbar {
+nav {
+  background: var(--color-blanco);
+  padding: 20px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  z-index: 100;
+  z-index: 1000;
 }
 
-.navbar .logo {
-  font-size: 1.5em;
-  font-weight: 700;
-  color: #f4a300;
+nav .logo {
+  font-size: 1.5rem;
+  color: var(--color-principal);
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
 }
 
-.navbar ul {
+nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.navbar a:hover {
-  color: #f4a300;
-}
-
-/* HERO */
-.hero {
-  background: url('fondo-empanadas.jpg') center/cover no-repeat;
-  color: white;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero-content {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 40px;
-  border-radius: 15px;
-}
-
-.hero h1 {
-  font-size: 2.8em;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  margin-bottom: 25px;
-  font-size: 1.2em;
-}
-
-.btn {
-  background-color: #f4a300;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background-color: #ffbf3f;
-}
-
-/* MENU */
-.menu {
-  padding: 80px 40px;
-  text-align: center;
-}
-
-.menu h2 {
-  margin-bottom: 40px;
-  font-size: 2em;
-}
-
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
-.menu-item img {
-  width: 100%;
-  border-radius: 15px;
-  height: 200px;
-  object-fit: cover;
+nav ul li a {
+  text-decoration: none;
+  color: var(--color-texto);
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-.menu-item h3 {
-  margin-top: 15px;
-  color: #f4a300;
+nav ul li a:hover {
+  color: var(--color-secundario);
 }
 
-/* NOSOTROS */
-.nosotros {
-  background-color: #fdf3e2;
-  padding: 80px 40px;
-  text-align: center;
+/* BOTONES GENERALES */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--color-secundario);
+  color: var(--color-blanco);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-.nosotros h2 {
-  margin-bottom: 20px;
-}
-
-/* CONTACTO */
-.contacto {
-  padding: 80px 40px;
-  text-align: center;
-}
-
-.contacto h2 {
-  margin-bottom: 15px;
+.btn:hover {
+  background: var(--color-principal);
 }
 
 /* FOOTER */
 footer {
-  background-color: #333;
-  color: #fff;
+  background: var(--color-principal);
+  color: var(--color-blanco);
   text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
+  padding: 50px 20px;
+  margin-top: 100px;
 }
 
-
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 200;
+footer h3 {
+  margin-bottom: 10px;
 }
 
-.whatsapp-float img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
+footer p {
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
-.whatsapp-float img:hover {
-  transform: scale(1.1);
+/* ANIMACIONES GENERALES */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
 }
 
-.btn {
-  background-color: #F4A300;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.btn:hover {
-  background-color: #E94E1B;
-  transform: scale(1.05);
-}
+/* RESPONSIVE NAV */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-
-/* Redes sociales en el header */
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.social-icons a img {
-  width: 28px;
-  height: 28px;
-  margin-left: 8px;
-  transition: transform 0.3s;
-}
-
-.social-icons a img:hover {
-  transform: scale(1.2);
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  background-color: #FFF8E7;
-  padding: 40px 0;
-  margin-top: 50px;
-  color: #333;
-  border-top: 2px solid #f4a300;
-}
-
-.footer p {
-  margin: 8px 0;
-  font-weight: 600;
-}
-
-.social-footer a img {
-  width: 40px;
-  height: 40px;
-  margin: 10px;
-  transition: transform 0.3s;
-}
-
-.social-footer a img:hover {
-  transform: scale(1.1);
-}
-
-.copy {
-  font-size: 0.9em;
-  color: #777;
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
