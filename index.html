@@ -3,102 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pasteles Jiney - Empanadas Colombianas</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Pasteles Jiney</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fuentes elegantes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- HEADER -->
- <header class="navbar">
-  <div class="logo-container">
-    <div class="logo">🥟 Pasteles Jiney</div>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/pastelesjiney" target="_blank">
-        <img src="Facebook.png" alt="Facebook">
-      </a>
-      <a href="https://www.instagram.com/pasteles_jiney/" target="_blank">
-        <img src="Instagram.png" alt="Instagram">
-      </a>
+<header class="navbar">
+  <div class="logo">Pasteles Jiney</div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Empanadas artesanales<br>con esencia colombiana</h1>
+    <p>Tradición casera elevada a una experiencia elegante.</p>
+    <a href="menu.html" class="btn">Descubrir menú</a>
+  </div>
+</section>
+
+<section class="about-preview">
+  <div class="container">
+    <div class="text">
+      <h2>Nuestra esencia</h2>
+      <p>
+        En Pasteles Jiney fusionamos recetas tradicionales con una presentación elegante.
+        Cada empanada es elaborada artesanalmente, cuidando cada detalle.
+      </p>
+    </div>
+    <div class="image">
+      <img src="img/empanadas-elegantes.jpg" alt="Empanadas artesanales">
     </div>
   </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="menu.html">Menú</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- HERO SECTION -->
-  <section id="inicio" class="hero">
-    <div class="hero-content">
-      <h1>Empanadas con sabor colombiano</h1>
-      <p>Recetas auténticas, hechas con amor y los mejores ingredientes.</p>
-      <a href="menu.html" class="btn">Ver Menú</a>
-    </div>
-  </section>
-
-  <!-- MENU SECTION -->
-  <section id="menu" class="menu">
-    <h2>Nuestro Menú</h2>
-    <div class="menu-grid">
-      <div class="menu-item">
-        <img src="empanada-carne.jpg" alt="Empanada de Carne">
-        <h3>Empanada de Carne</h3>
-        <p>Crujiente y llena de sabor.</p>
-      </div>
-      <div class="menu-item">
-        <img src="empanada-pollo.jpg" alt="Empanada de Pollo">
-        <h3>Empanada de Pollo</h3>
-        <p>Relleno suave y jugoso.</p>
-      </div>
-      <div class="menu-item">
-        <img src="empanada-queso.jpg" alt="Empanada de Queso">
-        <h3>Empanada de Queso</h3>
-        <p>Perfecta para los amantes del queso.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- NOSOTROS -->
-  <section id="nosotros" class="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>En <strong>Pasteles Jiney</strong> elaboramos empanadas tradicionales con el toque casero que tanto te gusta. Nacimos en Colombia con la misión de llevar el sabor de siempre a cada rincón.</p>
-  </section>
-
-  <!-- CONTACTO -->
-  <section id="contacto" class="contacto">
-    <h2>Contáctanos</h2>
-    <p>Haz tu pedido o visítanos. ¡Estamos felices de atenderte!</p>
-    <BR>
-    <a href="https://wa.me/570000000" class="btn">Escríbenos por WhatsApp</a>
-  </section>
+</section>
 
 <footer class="footer">
-  <p>Síguenos en nuestras redes</p>
-  <div class="social-footer">
-    <a href="https://www.facebook.com/pastelesjiney" target="_blank">
-      <img src="Facebook.png" alt="Facebook">
-    </a>
-    <a href="https://www.instagram.com/pasteles_jiney/" target="_blank">
-      <img src="Instagram.png" alt="Instagram">
-    </a>
+  <p>Síguenos</p>
+  <div class="social">
+    <a href="#"><img src="img/facebook.png"></a>
+    <a href="#"><img src="img/instagram.png"></a>
   </div>
-   </footer>
-  
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Pasteles Jiney. Todos los derechos reservados.</p>
-  </footer>
-
-  <!-- BOTÓN DE WHATSAPP -->
-<a href="https://wa.me/573001234567" class="whatsapp-float" target="_blank">
-  <img src="WHATSAPP.gif" alt="WhatsApp">
-</a>
+  <p class="copy">© 2025 Pasteles Jiney</p>
+</footer>
 
 </body>
 </html>
