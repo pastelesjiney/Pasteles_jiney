@@ -1,3 +1,37 @@
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background: transparent;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #3A2E2A;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3A2E2A;
+  font-weight: 400;
+  position: relative;
+}
+
+nav a.active,
+nav a:hover {
+  color: #C89B3C;
+}
+
 .menu-hero {
   background: #3A2E2A;
   color: #F6F1E8;
