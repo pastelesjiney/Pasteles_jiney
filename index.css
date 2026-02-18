@@ -154,3 +154,126 @@ nav a:hover {
     text-align: center;
   }
 }
+.destacados {
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.destacados h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 60px;
+  color: #3A2E2A;
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  margin: 20px 0 10px;
+  color: #3A2E2A;
+}
+
+.card p {
+  padding: 0 20px 30px;
+  font-size: 0.95rem;
+  color: #555;
+}
+.valores {
+  background: #ffffff;
+  padding: 100px 60px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.valor {
+  max-width: 300px;
+}
+
+.valor h3 {
+  font-family: 'Playfair Display', serif;
+  color: #C89B3C;
+  margin-bottom: 15px;
+}
+
+.valor p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.frase-marca {
+  background: #3A2E2A;
+  color: #F6F1E8;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.frase-marca h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  max-width: 800px;
+  margin: auto;
+}
+.cta {
+  text-align: center;
+  padding: 100px 20px;
+  background: #F6F1E8;
+}
+
+.cta h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #3A2E2A;
+}
+@media (max-width: 768px) {
+
+  .destacados {
+    padding: 60px 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valores {
+    padding: 60px 20px;
+    flex-direction: column;
+  }
+
+  .frase-marca {
+    padding: 80px 20px;
+  }
+
+  .cta {
+    padding: 60px 20px;
+  }
+
+}
