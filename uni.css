@@ -159,20 +159,6 @@ footer p {
    FOOTER GLOBAL ELEGANTE
 ========================= */
 
-.footer-redes a:nth-child(1):hover {
-  background: #E1306C; /* Instagram */
-}
-
-.footer-redes a:nth-child(2):hover {
-  background: #1877F2; /* Facebook */
-}
-
-.footer-redes a:nth-child(3):hover {
-  background: #000000; /* TikTok */
-}
-
-
-
 .footer {
   background: var(--color-principal);
   color: var(--color-blanco);
@@ -218,13 +204,13 @@ footer p {
   color: var(--color-secundario);
 }
 
-/* Logo footer */
+/* Logo */
 .footer-logo {
   width: 120px;
   margin-bottom: 20px;
 }
 
-/* Redes */
+/* Redes sociales */
 .footer-redes {
   display: flex;
   gap: 15px;
@@ -245,9 +231,22 @@ footer p {
 }
 
 .footer-redes a:hover {
-  background: var(--color-secundario);
   transform: translateY(-3px);
 }
+
+/* Colores originales en hover */
+.footer-redes a:nth-child(1):hover {
+  background: #E1306C; /* Instagram */
+}
+
+.footer-redes a:nth-child(2):hover {
+  background: #1877F2; /* Facebook */
+}
+
+.footer-redes a:nth-child(3):hover {
+  background: #000000; /* TikTok */
+}
+
 /* Dirección */
 .direccion {
   font-size: 0.9rem;
@@ -270,10 +269,11 @@ footer p {
   padding-top: 20px;
 }
 
-/* RESPONSIVE */
+/* Responsive */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     gap: 40px;
   }
 }
+
